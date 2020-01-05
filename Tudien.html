@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Từ điển</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	function Tudien() {
+	let x = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+	let y = ["thứ 2", "thứ 3", "thứ 4", "thứ 5", "thứ 6", "thứ 7", "chủ nhật"];
+	let input = document.getElementById("input").value;
+	let language = document.getElementById("country").value;
+    let a = x.indexOf(input);
+    let b = y.indexOf(input);
+	if (language === "VN") {
+            for (let i = 0; i < x.length; i++) {
+                if (a != -1) {
+                    document.getElementById("result").innerHTML = y[a];
+            } 
+        }
+    }else if (language === "TA") {
+            for(let i = 0;i<y.length;i++) {
+                if(b != -1) {
+                    document.getElementById("result").innerHTML= x[b];
+            }
+        }
+    }
+}
+
+</script>
+<input id="input" type="text">
+<button onclick = "Tudien()">Dịch</button>
+<select id="country">
+    <option  value="VN">Việt Nam</option>
+    <option  value="TA">Tiếng Anh</option>
+  </select>
+  <p id="result"></p>
+</body>
+</html>

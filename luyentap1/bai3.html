@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giá trị trung bình của mảng</title>
+</head>
+<body>
+<script type="text/javascript">
+let a = [9,15,22,11,5,2,51,23,20,6];
+let b = a[0];
+let c = a[0];
+for(let i=1;i<a.length;i++)
+{
+	if(a[i]>b){
+		b = a[i];
+	}
+	c += a[i]/a.length;
+	
+}document.write('Giá trị lớn nhất là:'+ b+'<br>');
+document.write('Giá trị trung bình là:'+ c);
+</script>
+</body>
+</html>

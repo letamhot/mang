@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V</title>
+</head>
+<body>
+<script type="text/javascript">
+	let a = [9,15,22,11,5,2,51,23,20,6];
+	let v = +prompt('Nhập vào phần tử V');
+	let flag = false;
+	function searchArray() {
+		for(let i =0 ; i<a.length;i++){
+		if(v === a[i]){
+			document.write('V is  in the array');
+			flag = true;
+			break;
+		}
+	}
+	if (flag == false) {
+		document.write('V is not in the array');
+	}
+	}
+	searchArray();
+	
+</script>
+</body>
+</html>

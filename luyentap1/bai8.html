@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sắp xếp giảm dần</title>
+</head>
+<body>
+	<script type="text/javascript">
+	let a = [9,15,22,11,5,2,51,23,20,6];
+	for(let i=0;i<a.length;i++){
+		for(let j=i+1;j<a.length-1;j++){
+			 if(a[i] < a[j]){
+               let tg = a[i];
+                a[i] = a[j];
+                a[j] = tg;        
+            }
+		}
+	}document.write(a);
+	</script>
+
+</body>
+</html>
